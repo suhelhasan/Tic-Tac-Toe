@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="coverPage">
+    <h2 class="heading">TIC-TAC-TOE 🎲</h2>
+    <div class="dataRequired">
+      <div>
+        <h1 class="player">Player-1</h1>
+        <h2>Enter Your Name</h2>
+
+        <input placeholder="enter name..." type="text" name="" id="playerOneName" autofocus />
+
+        <h2 class="chooseAvatar">Choose your avatar</h2>
+
+        <select id="avatarPlayer1" name="avatarList">
+          <option value="✔️">✔️</option>
+          <option value="💪"> 💪 </option>
+          <option selected value="❌">❌</option>
+          <option value="👊">👊</option>
+        </select>
+      </div>
+      <div>
+        <h1 class="player">Player-2</h1>
+        <h2>Enter Your Name</h2>
+        <input placeholder="enter name..." type="text" name="" id="playerTwoName" autofocus />
+
+        <h2 class="chooseAvatar">Choose your avatar</h2>
+
+        <select id="avatarPlayer2" name="avatarList">
+          <option selected value="✔️">✔️</option>
+          <option value="💪"> 💪 </option>
+          <option value="❌">❌</option>
+          <option value="👊">👊</option>
+        </select>
+      </div>
+    </div>
+    <div class="interInGame">
+      <h2>Start Game !</h2>
+    </div>
+  </div>
+
+  <!-- Main game start from here -->
+  <div class="mainPage">
+    <div class="main">
+      <div>
+        <table>
+          <tr class="borderBottom">
+            <td class="createDesign1" title="1"></td>
+            <td class="remove1" title="2"></td>
+            <td class="createDesign2" title="3"></td>
+          </tr>
+          <tr class="borderBottom">
+            <td class="remove2" title="4"></td>
+            <td class="middle" title="5"></td>
+            <td class="remove3" title="6"></td>
+          </tr>
+          <tr>
+            <td class="createDesign3" title="7"></td>
+            <td class="remove4" title="8"></td>
+            <td class="createDesign4" title="9"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="result-section">
+      <div>
+        <h1 class="result"></h1>
+      </div>
+
+      <div>
+        <button class="clear">
+          <h3>Clear</h3>
+        </button>
+        <button class="restart" onclick="location.reload();">
+          <h3>Restart</h3>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

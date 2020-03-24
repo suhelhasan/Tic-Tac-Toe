@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+
+.coverPage {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#34495e, #000);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heading {
+  color: #2ecc71;
+}
+
+.dataRequired {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dataRequired div {
+  padding: 10vh 7vh 10vh 7vh;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 7px;
+}
+
+.dataRequired h2 {
+  margin-bottom: 15px;
+}
+
+.player {
+  color: #e74c3c;
+  margin-bottom: 50px;
+}
+
+input {
+  background-color: transparent;
+  color: white;
+}
+
+.chooseAvatar {
+  margin-top: 50px;
+}
+
+#avatarPlayer1,
+#avatarPlayer2 {
+  color: #fff;
+  outline: none;
+  border: none;
+  margin-top: 0px;
+  width: 65px;
+  height: 65px;
+  font-size: 30px;
+  text-align: center;
+  background-color: transparent;
+}
+
+option {
+  background-color: #34495e;
+}
+
+#avatarPlayer1 option {
+  outline: none;
+  border: none;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgb(51, 50, 50);
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.interInGame {
+  border: 1px solid #2ecc71;
+  width: 220px;
+  height: 50px;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e74c3c;
+}
+
+.interInGame:hover {
+  background-color: #e74c3c;
+  color: #000;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 1000px) {
+  .coverPage {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .heading {
+    padding-bottom: 10px;
+  }
+
+  .dataRequired {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .dataRequired div {
+    padding: 5vh 4vh 5vh 4vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  /* kfdjmnlvjn lidjnvkjvndnvjknjvkndkjfvnjfvnjfvnvn */
+
+  .dataRequired h2 {
+    margin-bottom: 7px;
+  }
+
+  .player {
+    color: #e74c3c;
+    margin-bottom: 30px;
+  }
+
+  .chooseAvatar {
+    margin-top: 30px;
+  }
+
+  #avatarPlayer1,
+  #avatarPlayer2 {
+    width: 55px;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  input[type="text"] {
+    padding: 7px;
+    font-size: 18px;
+  }
+
+  .interInGame {
+    width: 180px;
+    height: 40px;
+  }
+}
+
+/* Main game area */
+.mainPage {
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#34495e, #000);
+  font-family: "Raleway", sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+td {
+  width: 20vh;
+  height: 20vh;
+  text-align: center;
+  font-size: 50px;
+  border: 1px solid #fff;
+}
+
+.createDesign1 {
+  border-top: none;
+  border-left: none;
+}
+
+.createDesign2 {
+  border-top: none;
+  border-right: none;
+}
+
+.createDesign3 {
+  border-bottom: none;
+  border-left: none;
+}
+
+.createDesign4 {
+  border-right: none;
+  border-bottom: none;
+}
+
+.remove1 {
+  border-top: none;
+}
+
+.remove2 {
+  border-left: none;
+}
+
+.remove3 {
+  border-right: none;
+}
+
+.remove4 {
+  border-bottom: none;
+}
+
+.result-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 25vh;
+}
+
+.afterWin {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 55%;
+  border-radius: 10px;
+}
+
+.result-section div {
+  height: 12vh;
+}
+
+.result-section button {
+  width: 140px;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+}
+
+.clear {
+  background-color: #2ecc71;
+}
+
+.restart {
+  background-color: #e74c3c;
+}
+
+.result {
+  margin-top: 2vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    height: 70vh;
+  }
+
+  td {
+    width: 18vh;
+    height: 18vh;
+    font-size: 35px;
+  }
+
+  .result-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30vh;
+  }
+
+  .afterWin {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 95%;
+    border-radius: 10px;
+  }
+
+  .result-section div:nth-child(1) {
+    height: 20vh;
+  }
+  .result-section div:nth-child(2) {
+    height: 7vh;
+  }
+
+  .result-section button {
+    width: 110px;
+    height: 50px;
+  }
+}
